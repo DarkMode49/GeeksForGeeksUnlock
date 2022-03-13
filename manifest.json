@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Unlock GeeksForGeeks",
+    "description": "Enable GeeksForGeeks website for users with no accounts",
+    "version": "1.0",
+    "author": "prmobin4sh@gmail.com",
+    "icons": {
+        "16": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "Unlock GeeksForGeeks"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.geeksforgeeks.org/*",
+        "http://www.geeksforgeeks.org/*",
+        "https://geeksforgeeks.org/*",
+        "http://geeksforgeeks.org/*"
+    ]
+}
